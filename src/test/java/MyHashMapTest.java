@@ -1,4 +1,5 @@
 import com.magic.datastructures.MyHashMap;
+import com.magic.datastructures.MyHashTable;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -19,5 +20,23 @@ public class MyHashMapTest {
         }
         int frequency = myHashMap.get("to");
         Assertions.assertEquals(2, frequency);
+    }
+
+    @Test
+    public void giveASentence_whenWordsAreAddedToList_ShouldReturnParanoidFrequency() {
+        String sentence = "Paranoids are not paranoid because they are paranoid but because they keep " +
+                "putting themselves into paranoid avoidable situations";
+        MyHashTable<String, Integer> myHashTable = new MyHashTable<>();
+        String[] words = sentence.toLowerCase().split(" ");
+        for (String word : words) {
+            Integer value = myHashTable.get(word);
+            if (value == null)
+                value = 1;
+            else
+                value = value + 1;
+            myHashTable.add(word, value);
+        }
+        int frequency = myHashTable.get("paranoid");
+        Assertions.assertEquals(3, frequency);
     }
 }
