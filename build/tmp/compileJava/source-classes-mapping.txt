@@ -1,8 +1,8 @@
-com/magic/datastructures/MyHashTable.java
- com.magic.datastructures.MyHashTable
+com/magic/datastructures/MyMapNode.java
+ com.magic.datastructures.MyMapNode
 com/magic/datastructures/MyLinkedList.java
  com.magic.datastructures.MyLinkedList
 com/magic/datastructures/MyHashMap.java
  com.magic.datastructures.MyHashMap
-com/magic/datastructures/MyMapNode.java
- com.magic.datastructures.MyMapNode
+com/magic/datastructures/MyHashTable.java
+ com.magic.datastructures.MyHashTable
