@@ -44,7 +44,7 @@ public class MyLinkedList<K, V> {
             tail = temp;
             temp.next = null;
         } else {
-            while (temp.next != null) {
+            while (temp != null) {
                 if (temp.next.key.equals(key)) {
                     MyMapNode<K, V> found = temp.next;
                     temp.next = found.next;

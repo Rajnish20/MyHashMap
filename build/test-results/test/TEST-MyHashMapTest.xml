@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyHashMapTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-06-07T02:27:33" hostname="DESKTOP-38KI29F" time="0.043">
+<testsuite name="MyHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-07T02:49:49" hostname="DESKTOP-38KI29F" time="0.034">
   <properties/>
-  <testcase name="giveASentence_whenWordIsRemovedFromHashMap_ShouldReturnNull()" classname="MyHashMapTest" time="0.029"/>
-  <testcase name="giveASentence_whenWordsAreAddedToList_ShouldReturnWordFrequency()" classname="MyHashMapTest" time="0.007"/>
-  <testcase name="giveASentence_whenWordsAreAddedToList_ShouldReturnParanoidFrequency()" classname="MyHashMapTest" time="0.004"/>
+  <testcase name="giveASentence_whenWordsAreAddedToList_ShouldReturnWordFrequency()" classname="MyHashMapTest" time="0.034"/>
   <system-out><![CDATA[found
 found
 found
@@ -12,19 +10,9 @@ to 2
 be 3
 or 1
 not 1
-themselves 1
-but 1
-keep 1
-are 2
-they 2
-into 1
-paranoids 1
-putting 1
-not 1
-avoidable 1
-paranoid 3
-because 2
-situations 1
+to 2
+be 3
+or 1
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

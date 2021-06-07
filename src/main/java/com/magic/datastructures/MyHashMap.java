@@ -20,9 +20,13 @@ public class MyHashMap<K, V> {
             myMapNode = new MyMapNode<>(key, value);
             this.myLinkedList.append(myMapNode);
         } else {
-            System.out.println("found");
             myMapNode.setValue(value);
         }
+    }
+
+    public void remove(K key)
+    {
+        myLinkedList.deleteFromLinkedList(key);
     }
     public void print()
     {
