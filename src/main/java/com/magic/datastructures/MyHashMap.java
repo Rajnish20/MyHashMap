@@ -1,5 +1,7 @@
 package com.magic.datastructures;
 
+import java.util.Locale;
+
 public class MyHashMap<K, V> {
     MyLinkedList<K, V> myLinkedList;
 
@@ -18,7 +20,21 @@ public class MyHashMap<K, V> {
             myMapNode = new MyMapNode<>(key, value);
             this.myLinkedList.append(myMapNode);
         } else {
+            System.out.println("found");
             myMapNode.setValue(value);
         }
+    }
+    public void print()
+    {
+        myLinkedList.printLinkedList();
+    }
+
+    public static void main(String[] args) {
+        MyHashMap<String,Integer> myMap = new MyHashMap<>();
+        myMap.add("Cool",1);
+        myMap.add("love",9);
+        myMap.add("Cool",10);
+        myMap.add("love",11);
+        myMap.print();
     }
 }

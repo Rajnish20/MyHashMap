@@ -54,4 +54,13 @@ public class MyHashTable<K, V> {
             myLinkedList.deleteFromLinkedList(key);
     }
 
+    public void print() {
+        for (int i = 0; i < bucketSize; i++) {
+            MyLinkedList<K, V> myLinkedList = this.bucket.get(i);
+            if (myLinkedList != null) {
+                myLinkedList.printLinkedList();
+            }
+        }
+    }
+
 }

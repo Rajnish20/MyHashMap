@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MyHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-06T09:59:02" hostname="DESKTOP-38KI29F" time="0.032">
+<testsuite name="MyHashMapTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-07T02:23:28" hostname="DESKTOP-38KI29F" time="0.042">
   <properties/>
-  <testcase name="giveASentence_whenWordIsRemovedFromHashMap_ShouldReturnNull()" classname="MyHashMapTest" time="0.032"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="giveASentence_whenWordsAreAddedToList_ShouldReturnParanoidFrequency()" classname="MyHashMapTest" time="0.042"/>
+  <system-out><![CDATA[themselves 1
+but 1
+keep 1
+are 2
+they 2
+into 1
+paranoids 1
+putting 1
+not 1
+avoidable 1
+paranoid 3
+because 2
+situations 1
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -2,8 +2,8 @@ package com.magic.datastructures;
 
 public class MyLinkedList<K, V> {
 
-    MyMapNode<K, V> head;
-    MyMapNode<K, V> tail;
+    MyMapNode<K, V> head = null;
+    MyMapNode<K, V> tail = null;
 
     public MyLinkedList() {
         this.head = null;
@@ -14,16 +14,17 @@ public class MyLinkedList<K, V> {
         if (this.head == null) {
             this.head = myNode;
         }
-        if (this.tail != null) {
-            this.tail.setNext(myNode);
+        else
+        {
+            tail.next = myNode;
         }
         this.tail = myNode;
     }
 
     public MyMapNode<K, V> search(K key) {
-        MyMapNode<K, V> tempNode = head;
-        while (tempNode != null && tempNode.getNext() != null) {
-            if (tempNode.getKey().equals(key)) {
+        MyMapNode<K, V> tempNode = this.head;
+        while (tempNode != null) {
+            if (tempNode.key.equals(key)) {
                 return tempNode;
             }
             tempNode = tempNode.next;
@@ -50,6 +51,15 @@ public class MyLinkedList<K, V> {
                 }
                 temp = temp.next;
             }
+        }
+    }
+
+
+    public void printLinkedList() {
+        MyMapNode<K, V> tempNode = this.head;
+        while (tempNode!= null) {
+            System.out.println(tempNode.key + " " + tempNode.value);
+            tempNode = tempNode.next;
         }
     }
 
