@@ -14,7 +14,7 @@ public class MyHashMap<K, V> {
         return (myMapNode == null) ? null : myMapNode.getValue();
     }
 
-    public void add(K key, V value) {
+    public void put(K key, V value) {
         MyMapNode<K, V> myMapNode = this.myLinkedList.search(key);
         if (myMapNode == null) {
             myMapNode = new MyMapNode<>(key, value);
@@ -27,14 +27,5 @@ public class MyHashMap<K, V> {
     public void print()
     {
         myLinkedList.printLinkedList();
-    }
-
-    public static void main(String[] args) {
-        MyHashMap<String,Integer> myMap = new MyHashMap<>();
-        myMap.add("Cool",1);
-        myMap.add("love",9);
-        myMap.add("Cool",10);
-        myMap.add("love",11);
-        myMap.print();
     }
 }

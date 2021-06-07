@@ -16,7 +16,7 @@ public class MyHashMapTest {
                 value = 1;
             else
                 value = value + 1;
-            myHashMap.add(word, value);
+            myHashMap.put(word, value);
         }
         int frequency = myHashMap.get("be");
         System.out.println(frequency);
@@ -36,7 +36,7 @@ public class MyHashMapTest {
                 value = 1;
             else
                 value = value + 1;
-            myHashTable.add(word, value);
+            myHashTable.put(word, value);
         }
         int frequency = myHashTable.get("paranoid");
         myHashTable.print();
@@ -55,7 +55,7 @@ public class MyHashMapTest {
                 value = 1;
             else
                 value = value + 1;
-            myHashTable.add(word, value);
+            myHashTable.put(word, value);
         }
         myHashTable.remove("avoidable");
         Integer frequency = myHashTable.get("avoidable");

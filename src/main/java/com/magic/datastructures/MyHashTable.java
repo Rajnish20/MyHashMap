@@ -20,7 +20,7 @@ public class MyHashTable<K, V> {
 
     }
 
-    public void add(K key, V value) {
+    public void put(K key, V value) {
         int index = this.getBucketIndex(key);
         MyLinkedList<K, V> myLinkedList = this.bucket.get(index);
         if (myLinkedList == null) {
